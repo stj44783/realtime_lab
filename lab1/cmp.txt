@@ -1,0 +1,2 @@
+在一開始t1rm的優先權高於t3rm時，t1rm的工作都幾乎能成功完成，而t3rm的工作大約有1%的miss ratio。
+但當t3rm的優先權高於t1rm時，t3rm的miss ratio並沒有太多變化，可是t1rm的miss ratio卻提高了，這個現象能發現，給execution time較小的t1rm較高的優先權，可以讓整體的工作成功率提高一些。
