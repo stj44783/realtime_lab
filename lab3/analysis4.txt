@@ -1,0 +1,1 @@
+每個訊息的傳遞都會由publisher到broker再到subcriber，將訊息傳遞的end-to-end latency扣掉各個point-to-point latency，得出的結果為在broker的處理時間稱為Tb，publisher能保留資料的時間為Tp。然而要達到容錯能力，當訊息到broker時必須在Tp的時間內複製到backup，或者傳送給subcriber。因為若是訊息在Tp到Tb的時間都還為被處理的話，錯誤發生時會導致無法救回資料，所以可以透過Tb-Tp得出deadline Td，根據這個Td的大小來設計優先權。

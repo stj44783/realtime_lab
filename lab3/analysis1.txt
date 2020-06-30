@@ -1,0 +1,3 @@
+EDF:每個task的週期減掉workload為訊息傳送出去的deadline，因此時間越短的優先權越高
+RM:每個task的週期越短的優先權越高
+FIFO:根據task開始的時間點為主，先到的task先處理
